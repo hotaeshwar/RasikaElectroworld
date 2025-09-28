@@ -65,7 +65,7 @@ const Footer = () => {
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <MapPin className="w-3 h-3 text-blue-400 flex-shrink-0" />
-                  <p className="text-xs text-gray-300">SCO 36, B-Block, VIP Road, Zirakpur-140 603</p>
+                  <p className="text-xs text-gray-300">SCO 02, Ground Floor, VIP Road, Ambala - Chandigarh Rd, opposite Kohinoor Dhaba, Zirakpur, Punjab 140603</p>
                 </div>
                 
                 <div className="flex items-center gap-2">
@@ -120,35 +120,14 @@ const Footer = () => {
                 <p className="text-gray-500">Owned by Priyank Singla</p>
               </div>
               
-              {/* Highlighted BuildingindiaDigital Credit */}
+              {/* BID Credit with Love */}
               <div className="text-center sm:text-right">
-                <p className="text-gray-400 flex items-center justify-center sm:justify-end gap-2">
-                  Website designed by{' '}
-                  <span className="flex items-center gap-1 group cursor-pointer">
-                    {/* BID Logo */}
-                    <div className="flex items-center">
-                      <span className="bg-orange-500 text-white font-bold text-sm px-1.5 py-0.5 rounded-l group-hover:bg-orange-600 transition-colors">
-                        B
-                      </span>
-                      <span className="bg-blue-600 text-white font-bold text-sm px-1.5 py-0.5 group-hover:bg-blue-700 transition-colors">
-                        I
-                      </span>
-                      <span className="bg-green-600 text-white font-bold text-sm px-1.5 py-0.5 rounded-r group-hover:bg-green-700 transition-colors">
-                        D
-                      </span>
-                    </div>
-                    {/* Company Name */}
-                    <span className="ml-1">
-                      <span className="text-orange-500 font-semibold group-hover:text-orange-400 transition-colors">
-                        Building
-                      </span>
-                      <span className="text-blue-600 font-semibold group-hover:text-blue-500 transition-colors">
-                        india
-                      </span>
-                      <span className="text-green-600 font-semibold group-hover:text-green-500 transition-colors">
-                        Digital
-                      </span>
-                    </span>
+                <p className="text-gray-400 flex items-center justify-center sm:justify-end gap-1">
+                  Made with ❤️ by{' '}
+                  <span className="font-semibold">
+                    <span className="text-orange-500">Building</span>
+                    <span className="text-green-600">india</span>
+                    <span className="text-orange-500">Digital</span>
                   </span>
                 </p>
               </div>

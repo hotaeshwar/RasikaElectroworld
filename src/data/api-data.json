@@ -1,0 +1,491 @@
+{
+    "endpoints": {
+        "auth": {
+            "token": "/token",
+            "register": "/register",
+            "users_me": "/users/me"
+        },
+        "content": {
+            "hero": "/hero",
+            "blog_posts": "/blog-posts",
+            "contact": "/contact",
+            "contact_info": "/contact-info",
+            "about_info": "/about-info",
+            "tv_brands": "/tv-brands",
+            "images": "/images",
+            "footer_contact": "/footer-contact",
+            "account_details": "/account-details"
+        },
+        "products": {
+            "tv": "/products/tv",
+            "air_conditioner": "/products/airconditioner",
+            "washing_machine": "/products/washingmachine",
+            "refrigerator": "/products/refrigerator",
+            "mixer": "/products/mixer",
+            "geyser": "/products/geyser",
+            "chimney": "/products/chimney",
+            "water_purifier": "/products/water-purifier"
+        }
+    },
+    "dataModels": {
+        "User": {
+            "username": "string",
+            "password": "string"
+        },
+        "HeroData": {
+            "title": "string",
+            "subtitle": "string",
+            "imageUrl": "string",
+            "price": "string"
+        },
+        "BlogPost": {
+            "id": "number",
+            "title": "string",
+            "imageUrl": "string",
+            "bio": "string"
+        },
+        "ContactForm": {
+            "fullName": "string",
+            "email": "string",
+            "subject": "string",
+            "message": "string"
+        },
+        "Product": {
+            "id": "string",
+            "name": "string",
+            "imageUrl": "string",
+            "oldPrice": "string",
+            "newPrice": "string",
+            "description": "string",
+            "rating": "number",
+            "reviewCount": "number"
+        }
+    },
+    "exampleResponses": {
+        "hero": {
+            "title": "TECHNOLOGY HACK YOU WON'T GET",
+            "subtitle": "The most advanced UHD TV ever.",
+            "imageUrl": "https://images.samsung.com/is/image/samsung/p6pim/in/ua43aue65akxxl/gallery/in-uhd-au7002-425303-ua43aue65akxxl-532615671?$684_547_PNG$",
+            "price": "Price on Request"
+        },
+        "blog_posts": [
+            {
+                "id": 1,
+                "title": "Electronic Geek",
+                "imageUrl": "https://images.unsplash.com/photo-1485712207830-8a665e701494?q=80&w=3260&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "bio": "Short bio about Electronic Geek."
+            },
+            {
+                "id": 2,
+                "title": "Tips for Traveling with Electronic Devices",
+                "imageUrl": "https://images.unsplash.com/photo-1620288091077-c2a5c32c5f85?q=80&w=3272&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "bio": "Short bio about traveling with electronic devices."
+            },
+            {
+                "id": 3,
+                "title": "Micro Fans & Blowers in Automation Processes",
+                "imageUrl": "https://images.unsplash.com/photo-1533022139390-e31c488d69e2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGxhcHRvJTIwbW9iaWxlfGVufDB8fDB8fHww",
+                "bio": "Short bio about micro fans and blowers in automation processes."
+            }
+        ],
+        "contact_info": {
+            "address": "Room 702, Panchadeep Complex, Unit 4, Bhouma Nagar, Bhubaneswar, Odisha 751001",
+            "phone": "090400 15300",
+            "email": "info@yoursite.com"
+        },
+        "about_info": {
+            "step1": "Choose from a wide range of products available in our store.",
+            "step2": "Make your payment securely through our platform.",
+            "step3": "Enjoy fast and reliable delivery to your doorstep."
+        },
+        "tv_brands": [
+            {
+                "name": "Dell",
+                "url": "https://media.designrush.com/inspiration_images/287193/conversions/dell_logo_design_1_fe597851bcac-mobile.jpg"
+            },
+            {
+                "name": "Philips",
+                "url": "https://1000logos.net/wp-content/uploads/2017/05/Phillips-Logo.png"
+            },
+            {
+                "name": "Sony",
+                "url": "https://1000logos.net/wp-content/uploads/2021/05/Sony-logo.png"
+            },
+            {
+                "name": "Samsung",
+                "url": "https://www.pngfind.com/pngs/m/209-2097619_original-samsung-logo-samsung-hd-png-download.png"
+            },
+            {
+                "name": "LG",
+                "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwIIj4yAFi7XZMFSdPAE1M5Tl_aJYmRoSWMg&s"
+            }
+        ],
+        "images": [
+            "https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/Isha/Jup24/Lead-Up_KSD-Heros_PC_Hero_3000x1200_Lifestyle_1._CB564094129_.jpg",
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG23/TVs/nikita/Jupiter/Hero/KSD/nl/New_Launches_PC_Hero_3000x1200_Asin._CB563846754_.jpg",
+            "https://images-eu.ssl-images-amazon.com/images/G/31/Events/img24/Jupiter24/GW/J24_GW_PC_Hero_KSD_EN_V2_2x._CB563840302_.jpg"
+        ],
+        "footer_contact": {
+            "company_name": "GVI TECHNOLOGY",
+            "address": "Room 702, Panchadeep Complex, Unit 4, Bhouma Nagar, Bhubaneswar, Odisha 751001",
+            "customer_service": "Round-the-clock free hotline (24/7)",
+            "free_shipping": "Shipping cost for any delivery method and order cost is $49",
+            "return_exchange": "You can return or exchange the item within 30 days.",
+            "newsletter": "Want to receive regular updates about our services? Sign up and we'll keep you posted!"
+        },
+        "account_details": {
+            "orders": "Your Orders",
+            "login_security": "Login & Security",
+            "prime": "Prime",
+            "addresses": "Your Addresses",
+            "payment_options": "Payment Options",
+            "amazon_pay_balance": "GVI Pay Balance",
+            "business_account": "Your Business Account"
+        },
+        "products": {
+            "tv": [
+                {
+                    "id": "tv1",
+                    "name": "Samsung 55\" 4K TV",
+                    "imageUrl": "https://m.media-amazon.com/images/I/71JQ3kUrR9L._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Experience vivid colors and incredible clarity with the Samsung 55-inch 4K TV. A perfect addition to your living room with its sleek design and smart features.",
+                    "rating": 4.2,
+                    "reviewCount": 1524
+                },
+                {
+                    "id": "tv2",
+                    "name": "LG 65\" Smart TV",
+                    "imageUrl": "https://m.media-amazon.com/images/I/71HI+VF6ZXL._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "The LG 65-inch Smart TV offers an immersive viewing experience with its stunning display and smart technology. Enjoy all your favorite streaming apps in one place.",
+                    "rating": 4.4,
+                    "reviewCount": 892
+                },
+                {
+                    "id": "tv3",
+                    "name": "Sony Bravia 50\" LED TV",
+                    "imageUrl": "https://m.media-amazon.com/images/I/81MRU+3RJLL._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Sony Bravia LED TV provides exceptional picture quality, deep contrast, and rich colors. It's the perfect blend of aesthetics and performance for your home.",
+                    "rating": 4.3,
+                    "reviewCount": 756
+                },
+                {
+                    "id": "tv4",
+                    "name": "TCL 43\" Roku TV",
+                    "imageUrl": "https://m.media-amazon.com/images/I/71gdqt4MtJL._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Enjoy your favorite shows and movies with the TCL 43-inch Roku TV. With built-in Roku, you'll have access to thousands of streaming channels.",
+                    "rating": 4.1,
+                    "reviewCount": 623
+                }
+            ],
+            "air_conditioner": [
+                {
+                    "id": "ac1",
+                    "name": "Mitsubishi Electric Kirigamine Series Split 1.9 Ton 3 Star Inverter AC",
+                    "imageUrl": "https://vsprod.vijaysales.com/media/catalog/product/m/e/mei_ac_sticker_msy-rjs_2.jpg?optimize=medium&fit=bounds&height=500&width=500",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Mitsubishi Electric Kirigamine Series 1.9 Ton 3 Star Inverter AC with PM 2.5 Filter for clean air filtration, Dual Barrier Coating for enhanced durability and protection, Fast Cooling technology for quick temperature control.",
+                    "rating": 4.5,
+                    "reviewCount": 342
+                },
+                {
+                    "id": "ac2",
+                    "name": "Daikin 1.5 Ton Inverter AC",
+                    "imageUrl": "https://m.media-amazon.com/images/I/61mOVGinDdL._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Stay cool with Daikin's 1.5 Ton Inverter AC, designed for maximum cooling and energy efficiency. Its sleek design complements any room's decor.",
+                    "rating": 4.4,
+                    "reviewCount": 567
+                },
+                {
+                    "id": "ac3",
+                    "name": "LG Dual Inverter AC",
+                    "imageUrl": "https://m.media-amazon.com/images/I/815QEibJCwL._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "The LG Dual Inverter AC provides optimal cooling and saves energy, featuring an advanced compressor for faster and more efficient cooling.",
+                    "rating": 4.3,
+                    "reviewCount": 789
+                },
+                {
+                    "id": "ac4",
+                    "name": "Voltas 1.2 Ton Split AC",
+                    "imageUrl": "https://m.media-amazon.com/images/I/51G96nyJlOL._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Beat the heat with Voltas 1.2 Ton Split AC, featuring high-efficiency cooling and easy maintenance. Ideal for medium-sized rooms.",
+                    "rating": 4.1,
+                    "reviewCount": 445
+                }
+            ],
+            "washing_machine": [
+                {
+                    "id": "washing1",
+                    "name": "LG 7 Kg Fully Automatic Top Load",
+                    "imageUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQpF6WZg6qwxDfmDU4NmKiF-2pvlKusWmwcsPm4jaNG9jNVTFeqLuJcUJq8aw6ONTOizj6L3vOE8w2rDRO8H0H-1iVfFmm5PCkGIyr7cpnEb6iRNHzGvPSd7E14wWtg9TfZABuJHu8&usqp=CAc",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "LG 7 Kg Fully Automatic Front Load Washing Machine with Steam Wash, 6 Motion DD Technology, and Smart Diagnosis for efficient and gentle cleaning of all fabric types.",
+                    "rating": 4.3,
+                    "reviewCount": 1256
+                },
+                {
+                    "id": "washing2",
+                    "name": "Samsung 8 Kg Fully Automatic Top Load",
+                    "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS68uc7CCRQoSwusLimwxhQutO6Pi5iWTbExZTecuJ3hIeo0jO6Ghu5MUpaQ46NDuT9xKKk3r80JIg8uezgyEG1IxZmVTY_WLe6v1m3qwyMRFWr-ZPj-XccmVv-jg5BOBFoRj8GgsKwpQ&usqp=CAc",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Samsung 8 Kg Fully Automatic Top Load Washing Machine with Digital Inverter Technology, Wobble Technology, and Magic Dispenser for powerful yet gentle wash.",
+                    "rating": 4.2,
+                    "reviewCount": 934
+                },
+                {
+                    "id": "washing3",
+                    "name": "IFB 6.5 Kg Fully Automatic Front Load",
+                    "imageUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ3AkvsIydVMee1MfOivZr3Cr96nWomyiUJBOU8RWtLq3MVIJ8_dgHY4I4wwindMKFKVeUXMLhWyvg8JNmmkz54828ZaEDicOhUCwC7X_Ftb8MnB4UBY-tm9leWxgkvP4nYFGTDqxPT&usqp=CAc",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "IFB 6.5 Kg Fully Automatic Front Load Washing Machine with 2X Power Steam, Aqua Energie water softener, and Cradle Wash for delicate fabrics.",
+                    "rating": 4.4,
+                    "reviewCount": 567
+                },
+                {
+                    "id": "washing4",
+                    "name": "Whirlpool 8.5 kg 5 Star Semi-Automatic Top Loading Washing Machine",
+                    "imageUrl": "https://m.media-amazon.com/images/I/61+I-UT90wL._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Whirlpool 8.5 kg 5 Star Semi-Automatic Top Loading Washing Machine with Magic Clean technology, 2x Drying Power, and 4 Years Comprehensive Warranty.",
+                    "rating": 4.0,
+                    "reviewCount": 823
+                }
+            ],
+            "refrigerator": [
+                {
+                    "id": "fridge1",
+                    "name": "LG 260L Double Door Refrigerator",
+                    "imageUrl": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQXMaPMFH-JIPQ9mpSeDGWef49Em-zMPIv6rEqVGTuU5P8QTmfGT3TM9QU1j17_Ble9-n-VRyD1LIPmHAgty1hR1_ARAgGlcO2kbkF-5bWV96ct2LmWnusldiS1RzW5jR28rE9wmQ&usqp=CAc",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "LG 260L Double Door Refrigerator with Smart Inverter Compressor, Multi Air Flow, and Moist 'N' Fresh technology for optimal food preservation and energy efficiency.",
+                    "rating": 4.2,
+                    "reviewCount": 1089
+                },
+                {
+                    "id": "fridge2",
+                    "name": "Samsung 314L Double Door Refrigerator",
+                    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGG_S1r1u50mjfGF8_BhzZ2Vx5ae1gM66_uA&s",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Samsung 314L Double Door Refrigerator with Digital Inverter Technology, All Around Cooling, and Twin Cooling Plus for enhanced freshness and reduced energy consumption.",
+                    "rating": 4.3,
+                    "reviewCount": 756
+                },
+                {
+                    "id": "fridge3",
+                    "name": "Whirlpool 265L Triple Door Refrigerator",
+                    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpCHERzgkIstFOMzHxqKVAEkQn0SGog6Aldw&s",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Whirlpool 265L Triple Door Refrigerator with Intellisense Inverter Technology, 6th Sense DeepFreeze, and Microblock Technology for superior cooling and freshness.",
+                    "rating": 4.1,
+                    "reviewCount": 634
+                },
+                {
+                    "id": "fridge4",
+                    "name": "Haier 195L Double Door Refrigerator",
+                    "imageUrl": "https://cdn.lotuselectronics.com/webpimages/676192IM.webp",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Haier 195L Double Door Refrigerator with Stabilizer Free Operation, 1 Hour Icing Technology, and Diamond Edge Freezing for compact yet efficient cooling solution.",
+                    "rating": 4.0,
+                    "reviewCount": 412
+                }
+            ],
+            "mixer": [
+                {
+                    "id": "mixer1",
+                    "name": "Sujata Powermatic Plus Juicer Mixer Grinder 900W",
+                    "imageUrl": "https://m.media-amazon.com/images/I/41BiQI16cdL._SX300_SY300_QL70_FMwebp_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Sujata Powermatic Plus 900 Watts Juicer Mixer Grinder with Double Ball Bearing Motor, 22000 RPM, Non-Stop 90 Mins Running, includes 1750ml Blender and 1000ml Grinder Jar.",
+                    "rating": 4.4,
+                    "reviewCount": 2845
+                },
+                {
+                    "id": "mixer2",
+                    "name": "Sujata MG-01 1000W Mixer Grinder",
+                    "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTeLM7S9IT7e9HhjQ1uz4cSxoIU88d7j-9HxT2Wa9sZ3_A-03BXsYfzFXIRKN1Gk4EwaFostVf4Beei02U2Y-uYwBgwgDmUiIIjr2vRRzAT4Rf9xcGPNiMvOQ",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Sujata MG-01 1000W Powerful Mixer Grinder with high-speed motor and durable construction. Perfect for all your grinding and mixing needs in the kitchen.",
+                    "rating": 4.3,
+                    "reviewCount": 1567
+                },
+                {
+                    "id": "mixer3",
+                    "name": "Sujata Multimix Juicer Mixer Grinder",
+                    "imageUrl": "https://www.jiomart.com/images/product/original/rv6lbhbz8z/sujata-multimix-juicer-mixer-grinder-with-coconut-milk-extractor-product-images-orv6lbhbz8z-p600080236-0-202304020024.jpg?im=Resize=(420,420)",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Sujata Multimix Juicer Mixer Grinder with coconut milk extractor feature. Compact design with multiple jars for versatile kitchen operations.",
+                    "rating": 4.2,
+                    "reviewCount": 892
+                },
+                {
+                    "id": "mixer4",
+                    "name": "Sujata 900W White Frootmix Mixer & Blender",
+                    "imageUrl": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQO5CSwB533aoaMhpn4LjajHn1ZEsQnx946U2A1blNAy7mYHnyf83D5idIkLy3mkj7W-x8_7TY910Bz6VUxJhHMyjC6AmR0zeCcj_S2ss9dcULqn1CYsXiac6U",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Sujata 900W White Frootmix Mixer & Blender with powerful motor and sleek white design. Ideal for making smoothies, juices, and blending various ingredients.",
+                    "rating": 4.3,
+                    "reviewCount": 723
+                }
+            ],
+            "geyser": [
+                {
+                    "id": "geyser1",
+                    "name": "Racold Omnis DG 25L Vertical Storage Water Heater",
+                    "imageUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRnr9Sre1FNgM2WN-OUIaSrXVEkQud1uk4E2k2KAVKhBtgiL-JAGQYTv1sCnSRE9xSgxwl0UdZsdvgCyHj0ORaVTjnPmYufI6ecPGfFgKTUOXeQGHA49KmRQk2nBqbd1sSVAwIH2Q&usqp=CAc",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Racold Omnis DG 25L Vertical 5 Star Storage Water Heater with Black Digital Display, Touch Control, Auto Diagnosis, suitable for High Rise Buildings. Free Standard Installation & Pipes, Wall Mounting included.",
+                    "rating": 4.2,
+                    "reviewCount": 567
+                },
+                {
+                    "id": "geyser2",
+                    "name": "Crompton Arno Neo 15L Storage Water Heater",
+                    "imageUrl": "https://m.media-amazon.com/images/I/515nNlnjmSL._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Crompton Arno Neo 15L 5 Star Rated Storage Water Heater with Advanced 3 Level Safety, National Energy Conservation Award Winner 2023. Efficient heating with energy savings.",
+                    "rating": 4.4,
+                    "reviewCount": 1234
+                },
+                {
+                    "id": "geyser3",
+                    "name": "AO Smith Geyser 15 Litre 5 Star BEE Rating Storage Water Heater",
+                    "imageUrl": "https://m.media-amazon.com/images/I/61phVJLhP1L._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "AO Smith Geyser 15 Litre 5 Star BEE Rating with 2KW heating element and Storage Water Heater featuring 2X Corrosion Resistant Blue Diamond Glass Tank. Warranty: 7 Yr Tank, 3 Yr heating element & 2 Yr Overall warranty.",
+                    "rating": 4.5,
+                    "reviewCount": 889
+                },
+                {
+                    "id": "geyser4",
+                    "name": "V-Guard Divino 15L Wall Mount Water Heater",
+                    "imageUrl": "https://m.media-amazon.com/images/I/31LhamonxVL._SX300_SY300_QL70_FMwebp_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "V-Guard Divino Geyser 15 Litre Wall Mount Water Heater for Home with 5 Star Rating, Vitreous Enamel Tank Coating, Advanced Multi-Layered Safety. Suitable for Hard Water and High-Rise Buildings.",
+                    "rating": 4.1,
+                    "reviewCount": 656
+                }
+            ],
+            "chimney": [
+                {
+                    "id": "chimney1",
+                    "name": "KAFF KEC 60A-DC 60cm 1400m³/hr BLDC Autoclean Curved Shape Chimney",
+                    "imageUrl": "https://m.media-amazon.com/images/I/61bV317i2lL._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "KAFF KEC 60A-DC 60cm 1400m³/hr BLDC Autoclean Curved Shape Chimney with Real Time Display, 9-Speed, Touch & Gesture Control, 2 Years Comprehensive Warranty. Energy efficient BLDC motor with advanced auto-clean technology.",
+                    "rating": 4.0,
+                    "reviewCount": 86
+                },
+                {
+                    "id": "chimney2",
+                    "name": "KAFF K-Series KES 90A Slant Filterless Auto Clean Kitchen Chimney",
+                    "imageUrl": "https://m.media-amazon.com/images/I/51drwNJgWIL._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "KAFF K-Series KES 90A Slant Filterless Auto Clean Kitchen Chimney, 90 CM, 1450 m³/hr Suction Capacity with Touch & Motion Sensor, 2 Years Comprehensive Warranty and Lifetime Motor Warranty. Advanced filterless technology with motion sensor control.",
+                    "rating": 3.5,
+                    "reviewCount": 63
+                },
+                {
+                    "id": "chimney3",
+                    "name": "Sunflame Lancer 60 cm Chimney with High Suction Capacity",
+                    "imageUrl": "https://m.media-amazon.com/images/I/51nozRFH3oL._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Sunflame Lancer 60 cm Chimney with 1250 m³/h High Suction Capacity, 1-Year Product and 5-Year Motor Coverage, Heat Auto-Clean, Touch Panel and Gesture Control, Baffle Filters for efficient smoke removal.",
+                    "rating": 3.5,
+                    "reviewCount": 8
+                },
+                {
+                    "id": "chimney4",
+                    "name": "Sunflame Naples 60 cm Filterless Chimney",
+                    "imageUrl": "https://m.media-amazon.com/images/I/51G7JCvzHqL._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Sunflame Naples 60 cm Filterless Chimney with 1100 m³/h High Suction Capacity, 2-Year Product and 8-Year Motor Coverage by Sunflame, Push Button Control, 3-Speed Exhaust Fan for effective kitchen ventilation.",
+                    "rating": 4.0,
+                    "reviewCount": 245
+                }
+            ],
+            "water_purifier": [
+                {
+                    "id": "ro1",
+                    "name": "KENT Supreme Plus Alkaline+Copper RO Water Purifier",
+                    "imageUrl": "https://m.media-amazon.com/images/I/61UKozh-B2L._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "KENT Supreme Plus Alkaline+Copper RO Water Purifier with RO+UV+UF+Alk+Cu+TDS Control+UV LED Tank, Advanced RO Technology for Sabse Shudh Paani, Auto Flush, 8L, 20LPH. Ideal for homes with TDS up to 2000ppm.",
+                    "rating": 4.2,
+                    "reviewCount": 1856
+                },
+                {
+                    "id": "ro2",
+                    "name": "HAVELLS Gracia Alkaline Max Water Purifier",
+                    "imageUrl": "https://vsprod.vijaysales.com/media/catalog/product/2/3/231736-image.jpg?optimize=medium&fit=bounds&height=500&width=500",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "HAVELLS Gracia Alkaline Max Water Purifier with RO + UV Hot & Cold, 7 Stage Purification, 7.5L Tank, Suitable for Hard/Soft Water. Advanced purification technology with hot and cold water dispensing feature.",
+                    "rating": 4.3,
+                    "reviewCount": 892
+                },
+                {
+                    "id": "ro3",
+                    "name": "Aquaguard Sure Delight RO+MC 1X Water Purifier",
+                    "imageUrl": "https://m.media-amazon.com/images/I/51azW1nqt6L._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Aquaguard Sure Delight RO+MC 1X Water Purifier with Free Service Plan worth ₹2000, India's #1 Water Purifier, Suitable for Borewell, Tanker & Municipal Water, 30x Impurity Removal vs ordinary pitchers.",
+                    "rating": 4.4,
+                    "reviewCount": 2681
+                },
+                {
+                    "id": "ro4",
+                    "name": "Livpure Allura Premia Water Purifier",
+                    "imageUrl": "https://m.media-amazon.com/images/I/51YqnS2RGNL._AC_UY436_FMwebp_QL65_.jpg",
+                    "oldPrice": "Price on Request",
+                    "newPrice": "Price on Request",
+                    "description": "Livpure Allura Premia Water Purifier with 2.5 Year No Service Cost- Filters Included, 10 Stage Advanced Purification, RO+UV+UF+Copper+Alk+Mineraliser, In Tank UV Sterilisation, 7 Ltrs capacity.",
+                    "rating": 4.1,
+                    "reviewCount": 1347
+                }
+            ]
+        }
+    },
+    "serverConfig": {
+        "host": "0.0.0.0",
+        "port": 8000,
+        "corsOrigins": [
+            "http://localhost:3000"
+        ]
+    }
+}
